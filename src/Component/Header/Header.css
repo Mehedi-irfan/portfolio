@@ -1,0 +1,81 @@
+header {
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 4rem;
+}
+.header__container {
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+/*==================CTA===================*/
+.cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+/*==================HEADER SOCAIL===================*/
+.header__socails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: absolute;
+  left: 0;
+  bottom: 3rem;
+  align-items: center;
+}
+.header__socails::after {
+  content: "";
+  height: 2rem;
+  width: 1px;
+  background-color: var(--color-parmary);
+}
+
+/*==================My IMAGE===================*/
+.me {
+  background: linear-gradient(var(--color-parmary), transparent);
+  width: 20rem;
+  height: 30rem;
+  position: absolute;
+  left: calc(50% - 11rem);
+  margin-top: 3rem;
+  border-radius: 12rem 12rem 0 0;
+}
+.me img {
+  height: 100%;
+}
+
+/*==================SCROLL DOWN===================*/
+.scroll__down {
+  position: absolute;
+  right: -2.3rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/*==================== MEDIA QUERIS (MEDIUM DEVICES)=======================*/
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 68vh;
+  }
+}
+
+/*==================== MEDIA QUERIS (SMALL DEVICES)=======================*/
+@media screen and (max-width: 600px) {
+  .header {
+    height: 100vh;
+  }
+  /* h2 {
+    font-size: 20px;
+  } */
+  .header__socails,
+  .scroll__down {
+    display: none;
+  }
+}
