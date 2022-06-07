@@ -40,7 +40,7 @@ header {
   width: 20rem;
   height: 30rem;
   position: absolute;
-  left: calc(50% - 11rem);
+  left: calc(50% - 10rem);
   margin-top: 3rem;
   border-radius: 12rem 12rem 0 0;
 }
@@ -71,9 +71,6 @@ header {
   .header {
     height: 100vh;
   }
-  /* h2 {
-    font-size: 20px;
-  } */
   .header__socails,
   .scroll__down {
     display: none;
